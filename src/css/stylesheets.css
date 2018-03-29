@@ -4,6 +4,7 @@ html, body {
     font-size: 1rem;
     font-family: LatoRegular, Arial;
     max-width: 1600px;
+    min-height: 100vh;
 }
 @font-face {
     font-family: YesevaOne; 
@@ -36,6 +37,9 @@ html, body {
 .wrapper {
     width: 1250px;
     margin: 0 auto;
+}
+.main {
+    padding: 0 0 320px 0;
 }
 .main .section:first-child {
     padding: 90px 0 0 0;
@@ -144,19 +148,6 @@ h3::after {
     text-decoration: none;
     cursor: pointer;
 }
-.logo-site::after{
-    background: url(../../src/img/bgr-blends.jpg);
-    content: "";
-    opacity: 0.02;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1; 
-}
-
-
 .nav__link {
     font-family: GentiumBookBasic, Arial;
     font-size: 1.25rem;
@@ -283,26 +274,24 @@ h3::after {
 }
 
 .article-theme_black {
-    background-image: linear-gradient(to right,rgba(0, 0, 0, .67) 0%,rgba(0, 0, 0, .67) 100%), 
-    url(../../src/img/bgr-blends.jpg);
-    background-blend-mode:luminosity;
     background: rgba(0, 0, 0, .67);
     padding-top: 83px;
     padding-bottom: 78px;
+    z-index: 0;
 }
-/*
+
 .article-theme_black::after {
-    background: url(../../src/img/bgr-blends.png);
-    content: "";
-    opacity: 0.02;
+    background: url(../../src/img/bgr-blends.jpg);
+    content: '';
+    opacity: 0.4;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1; 
-}*/
-
+    z-index: -1;
+    filter: invert(100%);
+}
 .article-theme_ingredients {
     position: absolute;
     right: 0;
@@ -330,6 +319,9 @@ h3::after {
 .footer {
     background: #191919;
     min-height: 320px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 .footer .media-social-links, .footer .payment-method-links {
@@ -402,14 +394,14 @@ h3::after {
     height: 20px;
     width: 430px;
 }
-.article-theme_menu>div:last-child::after {
-    content: '';
+.menu-container:last-child {
     margin-bottom: 57px;
 }
 .special {
     margin: 30px -10px 10px;
-    border: 1px solid grey;
-    border-image: url(../../src/img/bgr-blends.png) 25 30 10 20 repeat;
+    border-style: solid;
+    border-width: 1px;
+    border-image: url(../../src/img/bgr-special.jpg) 5 repeat;
     padding: 10px;
 }
 .special::before {
@@ -421,8 +413,8 @@ h3::after {
     top: -28px;
     width: 67px;
     padding: 6px;
-    background: grey;
-    right: 0;
+    background: url(../../src/img/bgr-special.jpg);
+    right: -1px;
     color: #ffffff;
 }
 .form-reservations {
@@ -476,11 +468,12 @@ h3::after {
 .form-reservations__input:focus:invalid {
     outline: none;
 }
-
+/*
 .input-date::after {
-    content: '';
+    content: '<i class="fa fa-calendar" aria-hidden="true"></i>';
 
-}
-.input-party-number:: {
+}*/
+.input-party-number::after {
     content: '';
+    font-family: FontAwesome5FreeRegular;
 }
