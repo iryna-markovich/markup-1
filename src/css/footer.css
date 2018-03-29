@@ -1,0 +1,25 @@
+.footer {
+    background: #191919;
+    min-height: 320px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer .media-social-links, .footer .payment-method-links {
+    position: absolute;
+    bottom: 0;
+}
+
+.footer .media-social-links__link-icon {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.footer .article {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+}

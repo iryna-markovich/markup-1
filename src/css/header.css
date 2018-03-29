@@ -1,0 +1,65 @@
+.header {    
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -11px;
+    background: url(../../src/img/bgr-header-theme.png) top center no-repeat;
+}
+
+.header-theme {
+    height: 159px;
+}
+
+.header .media-social-links {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.button {
+    width: 228px;
+    height: 55px;
+    border-width: 1px;
+    border-style: solid;
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    font-family: LatoRegular, Arial;
+    outline: none;
+    transition: all ease-in-out 0.2s;
+}
+
+.button-type_white {
+    border-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.button-type_black {
+    border-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.button-type_black:hover, .button-type_white:hover {
+    filter: drop-shadow(0px 8px 10px #000000);
+}
+
+.logo-site {
+    font-family: YesevaOne, Arial;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0px 235px 0px 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav__link {
+    font-family: GentiumBookBasic, Arial;
+    font-size: 1.25rem;
+    padding: 53px 24px 38px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav__link:hover {    
+    border-top: 3px solid rgba(255, 255,255, .71);
+}
+

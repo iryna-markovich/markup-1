@@ -1,0 +1,57 @@
+.form-reservations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: OpenSans;
+    margin: 40px 0 0 0;
+}
+
+.form-reservations__field {
+    width: calc(50% - 15px);
+    text-align: left;
+}
+
+.form-reservations__lable {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-reservations__input {
+    font-style: italic;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #c8c6c6;
+    background: rgba(255, 255, 255, .4);
+    height: 40px;
+    color: #7c7c7c;   
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-reservations__button{
+    margin: 20px auto 0;
+    font-size: 16px;
+    font-family: OpenSans;
+    background: rgba(200, 159, 45, .98);
+    border: 1px solid #c89f2d;
+    color: #ffffff;
+    height: 36px;
+    width: 200px;
+    outline: none;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.form-reservations__button:hover {
+    background: #dab33e;
+}
+
+.form-reservations__input:invalid {
+    border-color: #c89f2d;
+}
+
+.form-reservations__input:focus:invalid {
+    outline: none;
+}

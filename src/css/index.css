@@ -1,0 +1,40 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1rem;
+    font-family: LatoRegular, Arial;
+    max-width: 1600px;
+    min-height: 100vh;
+}
+
+* {
+    position: relative;
+}
+
+.hide-item {
+    display: none;
+}
+
+.wrapper {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.wrapper, .section, .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.media-social-links__link-icon {
+    text-decoration: none;
+    color: #dab33e;  
+}
+
+.media-social-links__link-icon, .payment-method-links__link-icon {
+    font-family: fa-brands-400, Arial;
+    float: left;
+    margin: 10px 5px;
+}
