@@ -129,7 +129,8 @@
 .menu-container {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 0;
+    font-size: 1rem;
 }
 .menu-container__header {
     display: flex;
